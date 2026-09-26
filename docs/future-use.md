@@ -32,4 +32,4 @@ AIへの自己紹介なら[AI向け用紙](../templates/ai-context.md)に今回�
 
 ## 大学・就職活動・社会人になってから
 
-同じ用紙と保存先で続けられます。大学生活の記録、就職活動のガクチカ、社会人になってからのAIへの説明は[高校卒業後も続ける](after-high-school.md)と[AIへ持ち運ぶ](portability.md)を使います。
+同じ記録形式で続けられます。大学版の準備が整ったら[新しいPrivateへの移行](migration-to-univ.md)を選べます。同じ保存先の継続も可能です。大学生活の記録、就職活動のガクチカ、社会人になってからのAIへの説明は[高校卒業後も続ける](after-high-school.md)と[AIへ持ち運ぶ](portability.md)を使います。

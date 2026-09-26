@@ -22,6 +22,12 @@ function Check-Fixture([bool]$ShouldPass, [string]$ExpectedText) {
     Assert ($output.Contains($ExpectedText)) "Expected '$ExpectedText' in checker result: $output"
 }
 
+function Check-Migration([bool]$ShouldPass, [string]$ExpectedText) {
+    $output = (& $pwsh -NoProfile -File (Join-Path $rootPath 'scripts/check-migration.ps1') -Source $teenSource -Destination $teenDestination -Manifest $teenManifest 2>&1 | Out-String)
+    Assert (($LASTEXITCODE -eq 0) -eq $ShouldPass) "Unexpected migration result: $output"
+    Assert ($output.Contains($ExpectedText)) "Expected '$ExpectedText' in migration output: $output"
+}
+
 try {
     foreach ($item in Get-ChildItem -LiteralPath $rootPath -Force) {
         if ($item.Name -notin @('.git', '.scratch', 'backups', 'node_modules')) {
@@ -100,6 +106,72 @@ try {
     Assert ((Get-FileHash -LiteralPath $existingRecord).Hash -eq $existingHash) 'Existing destination record was overwritten.'
     Check-Fixture $true 'PASS:'
     Write-Output 'PASS: grouped migration preserves source, destination content, dates and local links without overwriting an occupied group.'
+
+    # University handover: absent date fields, old blank templates, nested legacy,
+    # links to omitted records, and a source allowlist that never copies the omitted file.
+    $teenSource = Join-Path $testPath 'teen-source'
+    $teenDestination = Join-Path $fixture 'legacy/teens-02'
+    $teenManifest = Join-Path $testPath 'permitted.json'
+    $teenOccupied = Join-Path $fixture 'legacy/teens-01'
+    New-Item -ItemType Directory -Path $teenOccupied -Force | Out-Null
+    $teenExisting = Join-Path $teenOccupied 'questions.md'
+    [IO.File]::WriteAllText($teenExisting, '# 架空の既存台帳。日付欄を足さず保持する。')
+    $teenExistingHash = (Get-FileHash -LiteralPath $teenExisting).Hash
+    $records = [ordered]@{
+        'experiences/old-note.md' = "# 架空の旧記録`n紙の案内を作った。`n[対象外](stopped.md)`n[旧ルート](/old.md)`n"
+        'projects/library/README.md' = "# 架空の記入済み入口`n[原記録](../../experiences/old-note.md)`n"
+        'legacy/elementary-01/questions.md' = "# 架空の旧台帳`n状態: 未着手`n"
+        'templates/old.md' = "# 架空の参照用紙`n- 作成日:`n- 更新日:`n"
+    }
+    $entries = @()
+    Assert (-not (Test-Path -LiteralPath $teenDestination)) 'University destination must be unused.'
+    foreach ($relative in $records.Keys) {
+        $sourceFile = Join-Path $teenSource $relative
+        $destinationFile = Join-Path $teenDestination $relative
+        New-Item -ItemType Directory -Path (Split-Path $sourceFile -Parent), (Split-Path $destinationFile -Parent) -Force | Out-Null
+        [IO.File]::WriteAllText($sourceFile, $records[$relative])
+        Copy-Item -LiteralPath $sourceFile -Destination $destinationFile
+        $kind = if ($relative.StartsWith('templates/')) { 'reference' } else { 'record' }
+        $entries += @{ path = $relative; kind = $kind }
+    }
+    $omittedSource = Join-Path $teenSource 'experiences/stopped.md'
+    [IO.File]::WriteAllText($omittedSource, '# 架空の対象外記録。移行しない。')
+    $manifestData = @{ version = 1; source_repository = 'fictional-teen-repository'; source_revision = 'fictional-snapshot'; files = $entries }
+    $manifestData | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $teenManifest -Encoding utf8
+    $originalManifest = Get-Content -LiteralPath $teenManifest -Raw -Encoding utf8
+    Check-Migration $true 'permitted files match'
+    Check-Fixture $true 'REVIEW legacy/teens-02/experiences/old-note.md: missing link'
+    Assert (-not (Test-Path -LiteralPath (Join-Path $teenDestination 'experiences/stopped.md'))) 'Omitted record was copied.'
+
+    $changedFile = Join-Path $teenDestination 'experiences/old-note.md'
+    [IO.File]::AppendAllText($changedFile, "`n- 作成日: 2026-09-27")
+    Check-Migration $false 'Content mismatch'
+    Copy-Item -LiteralPath (Join-Path $teenSource 'experiences/old-note.md') -Destination $changedFile -Force
+    $extraFile = Join-Path $teenDestination 'extra.txt'
+    [IO.File]::WriteAllText($extraFile, 'fictional extra copy')
+    Check-Migration $false 'Unexpected destination file'
+    Remove-Item -LiteralPath $extraFile
+
+    foreach ($badEntry in @(
+        @{ path = '../outside.md'; kind = 'record' },
+        @{ path = '/absolute.md'; kind = 'record' },
+        @{ path = 'AGENTS.md'; kind = 'reference' },
+        @{ path = '.claude/skills/test.md'; kind = 'reference' },
+        @{ path = 'experiences/old-note.md'; kind = 'record' }
+    )) {
+        $manifestData.files = $entries + @($badEntry)
+        $manifestData | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $teenManifest -Encoding utf8
+        $expected = if ($badEntry.path -in @('AGENTS.md', '.claude/skills/test.md')) { 'Old instruction' }
+            elseif ($badEntry.path -eq 'experiences/old-note.md') { 'Duplicate path' } else { 'Unsafe relative path' }
+        Check-Migration $false $expected
+    }
+    [IO.File]::WriteAllText($teenManifest, $originalManifest)
+    Check-Migration $true 'permitted files match'
+    Assert ((Get-FileHash -LiteralPath $teenExisting).Hash -eq $teenExistingHash) 'Existing teens-01 was changed.'
+    foreach ($relative in $records.Keys) {
+        Assert (([IO.File]::ReadAllText((Join-Path $teenSource $relative))) -ceq $records[$relative]) 'Source text was changed.'
+    }
+    Write-Output 'PASS: university handover preserves undated records, nested legacy and old templates; reports omitted links; rejects changed bytes, extra files, unsafe paths, old instructions and duplicates.'
 
     # A-09: restore body and links; external storage is deliberately a separate fixture.
     $payload = Join-Path $testPath 'backup-source'

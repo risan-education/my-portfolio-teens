@@ -9,13 +9,13 @@
 
 ## はじめに
 
-このポートフォリオの第一の目的は、大学入試の総合型選抜・推薦入試への備えです。記録は入試で終わらず、面接、大学生活、就職活動、社会人になってからのAI利用まで、同じ形式で続けられます。
+このポートフォリオの第一の目的は、大学入試の総合型選抜・推薦入試への備えです。記録は入試で終わらず、面接、大学生活、就職活動、社会人になってからのAI利用へ引き継げます。大学版 `my-portfolio-univ` は仮の要件定義段階です。[移行準備](docs/migration-to-univ.md)と[共通仕様](docs/portfolio-format.md)を用意し、配布準備が整った後に新しい自分用Privateへ移せるようにします。同じ保存先で続ける方法も選べます。
 
 - **日々の記録と考えを残す。** 部活・読書・行事・趣味・疑問を、一言から残します。志望校が未定でも始められます。
 - **一つの主テーマを6段階で探究する。** 高1頃から大学の学び・募集要項と自分の関心を照らし合わせ、問いを立て、検証・発信・協働まで継続します。入試対策に取り組む場合の中心となる活動で、取り組むかどうか、いつ始めるかは本人が選びます。
 - **自分を知り、伝える材料にする。** 得意・苦手・好き・嫌いと性格の傾向を本人の言葉と記録から整理し、大学・学部選び、志望理由書・活動報告、[面接](docs/interview-guide.md)、[就職活動のガクチカ](docs/after-high-school.md)、[AIへ渡す自己紹介](docs/portability.md)に使います。
 
-中学生・高校生が共通の用紙を使うテンプレート集（0.4.0）です。本人が記録と利用範囲を選び、保護者は希望に応じて支援します。
+中学生・高校生が共通の用紙を使うテンプレート集（0.5.0）です。本人が記録と利用範囲を選び、保護者は希望に応じて支援します。
 
 ### 今の学年・状況から選ぶ
 
@@ -24,7 +24,7 @@
 | 中1〜中3。まず残したい | [最初の10分](docs/first-10-minutes.md) → [はじめ方](docs/getting-started.md) → [日常の記録](docs/recording-guide.md) |
 | 高1頃。入試を意識し始めた | [探究テーマの選び方](docs/choosing-inquiry-theme.md) → [6段階の探究ガイド](docs/inquiry-project-guide.md) → [出願準備](docs/admissions-guide.md) |
 | 高2〜高3。出願・面接が近い | [出願準備と出力](docs/admissions-guide.md) → [提出条件確認](templates/submission-check.md) → [面接の準備](docs/interview-guide.md) |
-| 大学生・社会人。続けたい | [高校卒業後も続ける](docs/after-high-school.md) → [AIへ持ち運ぶ](docs/portability.md) |
+| 大学生・社会人。続けたい | [大学版への移行準備](docs/migration-to-univ.md) → [高校卒業後も続ける](docs/after-high-school.md) → [AIへ持ち運ぶ](docs/portability.md) |
 | 小学生版を使っていた | [引き継ぎガイド](docs/migration.md) |
 
 ### 高1で募集要項を読んだら、6段階の探究を始める
@@ -53,7 +53,7 @@
 
 1. **[はじめ方](docs/getting-started.md)** を開き、年齢・同意条件を確認してChatGPTのアカウントを用意する。
 2. **GitHubのアカウントと自分用Privateを用意**する。配布元の「Use this template」から作れます。
-3. **ChatGPTにGitHubを接続**し、自分用Privateを対象にする。ChatGPTのGitHub接続は、読み取りに加えてファイルの作成・追記・保存ができます。
+3. **ChatGPTにGitHubを接続**し、自分用Privateを対象にする。書込対応の接続では作成・追記・保存を頼めます。[確認済み・未確認の環境](docs/connection-environments.md)を読み、自分の接続でできることを確かめます。
 4. **AGENTS.mdを読んでもらい、[架空の記録で保存を確認](docs/connection-check.md)**する。
 5. **体験を伝え、案を確認して保存する。**
 
@@ -69,7 +69,7 @@
 
 > この内容で保存してください。
 
-ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。GitHubでファイルを開き直して完了です。[日常の使い方](docs/recording-guide.md)／[依頼例](docs/ai-guide.md)
+保存できる環境ではChatGPTが自分用Privateへ保存し、保存先を報告します。標準はmainですが、別ブランチ・PRが必要な場合は先に方法を確認し、mainへの反映と区別します。GitHubでファイルを開き直して完了です。[日常の使い方](docs/recording-guide.md)／[依頼例](docs/ai-guide.md)
 
 ## 今の目的から選ぶ
 
@@ -79,6 +79,8 @@ ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。Gi
 | 深める | この問いを調べたい。次の一歩を相談したい | [探究ノート](templates/inquiry.md)・[問いの一覧](questions.md)・[6段階の探究](templates/inquiry-project.md) |
 | 振り返る | 選んだ記録から、考えの変化を振り返りたい | [振り返り](templates/reflection.md)・[年間振り返り](templates/annual-review.md) |
 | 自分を知る | 得意・苦手・好き・嫌いを、根拠付きで整理したい | [自己理解](templates/self-understanding.md)・[進路探索](templates/career-exploration.md) |
+| 探究をまとめる | 問い・方法・結果・考察を根拠付きでつなぎたい | [探究レポート](templates/inquiry-report.md)・[まとめ方](docs/inquiry-report-guide.md) |
+| 記録を探す | 今回使う原記録を選ぶ一覧を作りたい | [索引](templates/record-index.md)・[探し方](docs/record-index.md) |
 | 出願に備える | 募集要項を確認して、計画と提出物を整えたい | [準備計画](templates/admissions-plan.md)・[提出条件確認](templates/submission-check.md)・[出願用出力](templates/admissions-output.md) |
 | 面接に備える | 書いたことを、記録に戻って話せるようにしたい | [面接準備シート](templates/interview-prep.md) |
 | 活用する | 根拠を付けて、発表・就活・AIへの説明の材料を整理したい | [根拠付き要約](templates/evidence-summary.md)・[AI向け自己紹介](templates/ai-context.md)・[自己紹介の現在版](templates/ai-profile.md) |
@@ -106,6 +108,8 @@ ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。Gi
 - [接続・保存の確認と困ったとき](docs/connection-check.md)／[ChatGPTとの架空のやりとり](examples/chatgpt-session.md)
 - [総合型選抜・推薦入試の準備と出力](docs/admissions-guide.md)／[自己理解と大学・学部選び](docs/self-understanding.md)／[面接・口頭試問の準備](docs/interview-guide.md)
 - [入試対策の中心となる6段階の探究ガイド](docs/inquiry-project-guide.md)
+- [大学版への移行準備](docs/migration-to-univ.md)／[共通仕様](docs/portfolio-format.md)／[移行検査](docs/migration-verification.md)
+- [探究レポートのまとめ方](docs/inquiry-report-guide.md)／[記録の索引](docs/record-index.md)
 - [高校卒業後も続ける（大学・ガクチカ）](docs/after-high-school.md)／[AIへ持ち運ぶ](docs/portability.md)／[発表・進路・面接への活用](docs/future-use.md)
 - [日付のルール](docs/file-dates.md)／[保護者などの支援者へ](docs/supporter-guide.md)
 - [共有と個人情報](docs/privacy.md)／[利用停止・削除](docs/record-choices.md)
@@ -116,4 +120,4 @@ ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。Gi
 
 用紙・説明文・架空例は [MIT License](LICENSE) です。本人が追加する文章・写真・作品に自動適用するものではありません。[小学生版](https://github.com/risan-education/my-portfolio-elementary)を参照しています。[再利用の記録](docs/sources.md)
 
-管理者向け: [要件定義](docs/requirements.md)／[受入確認](docs/acceptance-review.md)／[変更履歴](CHANGELOG.md)
+管理者向け: [要件定義](docs/requirements.md)／[受入確認](docs/acceptance-review.md)／[変更履歴](CHANGELOG.md)／[記事での紹介](docs/publication-guide.md)

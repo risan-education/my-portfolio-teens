@@ -27,7 +27,7 @@
 
 ## 次にすること
 
-- 続けたいと思ったら、[はじめ方](getting-started.md)で自分用のPrivateリポジトリを作り、ChatGPTと接続します。接続後は、保存もChatGPTに頼めます。
+- 続けたいと思ったら、[はじめ方](getting-started.md)で自分用のPrivateリポジトリを作り、ChatGPTと接続します。書込対応の接続では保存もChatGPTに頼めます。[確認範囲](connection-environments.md)を読み、自分の環境で保存できるか架空の練習で確かめます。
 - 先ほど保存したメモは、接続後に experiences/ へ移せます。ChatGPTに「このメモを一言メモとして保存する案を見せて」と頼みます。
 - 用紙を貼らずに頼めるようにするには、[AGENTS.md](../AGENTS.md)を読んでもらいます。接続後は自分用URLを伝えるだけで読んでもらえます。
 

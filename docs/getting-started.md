@@ -56,7 +56,7 @@ GitHubは、ノートの文章をファイルとして保存し、変更履歴�
 
 ## 4. GitHubをChatGPTへ接続する
 
-ChatGPTのGitHub接続は、リポジトリの読み取りに加えて、ファイルの作成・追記・保存（コミット）ができます。接続の設定場所や表示名はChatGPTの版によって変わるため、公式の説明で確かめてください。[GitHub接続の公式説明](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt)
+ChatGPTの書込対応のGitHub接続では、リポジトリの読み取りに加えて、ファイルの作成・追記・保存（コミット）を頼めます。[確認範囲と環境別の記録](connection-environments.md)を先に読み、mainへの直接保存、別ブランチ・PR、端末内保存のどれに対応するかを確認します。接続の設定場所や表示名はChatGPTの版によって変わるため、公式の説明で確かめてください。[GitHub接続の公式説明](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt)
 
 1. ChatGPTの設定（Settings）から、接続機能（コネクタ／アプリ等）を開き、GitHubを選ぶ。
 2. 案内されたGitHubの認可画面でログインする。提供元と要求されるアクセス範囲を読み、対象を選べる場合は自分用の保存先だけに限定する。
@@ -87,7 +87,7 @@ ChatGPTが用紙と保存先を提案します。実記録なら例えば experi
 
 > この内容で保存してください。
 
-ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。GitHubでリンクを開き、**mainの本文・日付**を確認して完了です。GitHub接続ツールが直接コミットした場合は、追加でpushコマンドを実行する必要はありません。端末内だけの編集なら、GitHubへ反映する操作と確認が別に必要です。
+自分の環境で確認した方法でChatGPTが保存し、保存先を報告します。標準は自分用Privateのmainです。別ブランチ・PRが必要なら事前に説明を受け、その範囲で進めます。main反映前は未反映です。GitHubでリンクを開き、**mainの本文・日付**を確認して完了です。GitHub接続ツールが直接コミットした場合は、追加でpushコマンドを実行する必要はありません。端末内だけの編集なら、GitHubへ反映する操作と確認が別に必要です。
 
 保存できない環境では「GitHubへ貼り付けるファイル名と本文を出してください」と頼み、[手動保存](manual-editing.md)を使います。下書きが表示された段階では未保存です。
 
@@ -95,7 +95,7 @@ ChatGPTが自分用Privateのmainへ保存し、保存先を報告します。Gi
 
 ## 任意: 有料プランとアプリ
 
-この教材は無料プランでも使えます。利用上限や機能が足りないと感じたら、有料プランを検討します。
+この教材は無料プランでの下書きと手動保存でも使えます。無料プランでのGitHubへの直接保存を全環境で検証した意味ではありません。利用上限や機能が足りないと感じたら、有料プランを検討します。
 
 - **ChatGPT Plus**: 公式の基準価格は **月額20米ドル・月払い** です。日本円の金額、税、支払い方法、更新日は契約画面で確認してください。[Plusの公式説明](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)（確認日: 2026-09-26）。未成年の契約・支払いは保護者と確認して進めます。解約はWeb契約なら **Settings → Billing → Cancel plan**、アプリストア契約はAppleまたはGoogle Playのサブスクリプション管理で行います。アプリを削除するだけでは解約されません。[公式の解約手順](https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription)（確認日: 2026-09-26）
 - **公式アプリ**: [OpenAIの公式ダウンロードページ](https://chatgpt.com/download/)から、端末に合うアプリを入れられます。提供元がOpenAIであることを確認し、同じアカウントでログインします。スマホ・Web・パソコンで使える機能が異なることがあります。学校・共有端末では[Web版](https://chatgpt.com/)から始められます。[アプリの開始手順](https://learn.chatgpt.com/docs/quickstart)（確認日: 2026-09-26）

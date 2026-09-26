@@ -43,7 +43,7 @@ ChatGPTやGitHubの既存アカウントは引き続き使えます。契約し�
 
 ### 1. 中高生版の新しい保存先を作る
 
-[はじめ方](getting-started.md)の手順5に沿って、[中高生版の公開テンプレート](https://github.com/risan-education/my-portfolio-teens)から新しいPrivateを作ります。作成先の所有者・URL・Private表示を確認してください。テンプレートを複製した後に、小学生用のPrivateから自分の記録をコピーします。
+[はじめ方のPrivate作成](getting-started.md#3-自分用のprivateリポジトリを作る)に沿って、[中高生版の公開テンプレート](https://github.com/risan-education/my-portfolio-teens)から新しいPrivateを作ります。作成先の所有者・URL・Private表示を確認してください。テンプレートを複製した後に、小学生用のPrivateから自分の記録をコピーします。
 
 > 中高生版のテンプレート https://github.com/risan-education/my-portfolio-teens から、新しいPrivateリポジトリを作り、小学生用の記録を引き継ぎたいです。既存のアカウントを使って準備する手順を教えてください。小学生用の保存先は［旧PrivateのURL］です。元の保存先は残してください。
 
@@ -92,7 +92,7 @@ ChatGPTやGitHubの既存アカウントは引き続き使えます。契約し�
 | assets/ | 所在メモを保持。外部原本の所有者・閲覧権限・バックアップも別に確認 |
 | 旧templates/・docs/ | 原記録から必要な参照がある場合に同じ配置で残せる。実績としては集計しない |
 | 旧examples/ | 配布元の架空例。本人の活動へ変換しない。参照用に残す場合も架空と区別 |
-| 旧AGENTS.md・CLAUDE.md・.github/ | 新しい保存先の現行指示へ上書きしない。旧指示書を有効な指示としてlegacy内へ持ち込まない |
+| 旧AGENTS.md・CLAUDE.md・.github/・.claude/・.agents/・.codex/ | 新しい保存先の現行指示へ上書きしない。旧指示書を有効な指示としてlegacy内へ持ち込まない |
 | LICENSE | 教材や架空例を再利用する場合は表示を保持する |
 | .git/・秘密情報 | 通常のファイルコピーに含めない。履歴が必要なら別途バックアップ方法を選ぶ |
 
@@ -171,3 +171,5 @@ ChatGPTやGitHubの既存アカウントは引き続き使えます。契約し�
 新しいChatGPTの会話は、旧会話の内容を自動で引き継ぐ前提にしません。新URLと確認メモ、本人が選んだ元記録を指定して始めます。会話履歴を丸ごとコピーする必要はありません。
 
 [READMEへ戻る](../README.md)／[はじめ方](getting-started.md)／[架空の引き継ぎ例](../examples/migration/README.md)
+
+旧記録の日付欄は追加せず、[移行検査](migration-verification.md)で原文保持を確認します。大学進学時は[大学版への移行](migration-to-univ.md)を参照してください。

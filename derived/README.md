@@ -17,4 +17,6 @@ ChatGPTへの頼み方:
 
 [AI向け自己紹介](../templates/ai-context.md)／[進路探索](../templates/career-exploration.md)／[提出条件確認](../templates/submission-check.md)
 
-templates/・examples/・案内文は本人の実績に含めません。利用停止した原記録を使う要約も停止し、復元時にも再利用しません。
+templates/・examples/・practice/・docs/（docs/prompt/を含む）・案内文・旧指示書・索引・移行確認メモは本人の実績に含めません。利用停止した原記録を使う要約も停止し、復元時にも再利用しません。
+
+[探究レポート](../docs/inquiry-report-guide.md)もここへ別保存します。要約の本人確認日・次の見直し・利用状態を残し、根拠の訂正や利用停止を反映します。長期の自己紹介の現在版だけはprofile/に置きます。

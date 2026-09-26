@@ -14,6 +14,8 @@
 | 入試対策の主テーマを進める | [6段階の入口・継続計画](inquiry-project.md) | projects/テーマ/README.md |
 | 振り返る | [振り返り](reflection.md)・[年間](annual-review.md) | reflections/・annual-review/ |
 | 活用する | [要約](evidence-summary.md)・[AI向け](ai-context.md)・[進路](career-exploration.md)・[提出条件](submission-check.md) | derived/ |
+| 探究を文章にする | [探究レポート](inquiry-report.md) | derived/YYMMDD-inquiry-report.md |
+| 記録を探す | [索引](record-index.md) | profile/YYMMDD-record-index.md |
 | 面接に備える | [面接準備](interview-prep.md) | derived/YYMMDD-interview-prep.md |
 | AIへ長く使う自己紹介 | [自己紹介の現在版](ai-profile.md) | profile/YYMMDD-ai-profile.md |
 | 出願に備える | [準備計画](admissions-plan.md)・[出願用出力](admissions-output.md) | derived/YYMMDD-admissions-plan.md等 |

@@ -9,7 +9,7 @@
 
 README、はじめ方、GitHubの基本、AIガイド、接続確認、Claude Codeの補足、活動記録・探究ノート、AI編集指示、移行ガイドを参照しました。ChatGPTへメモを伝えて案を確認し保存する流れを、中高生本人が操作する案内へ適用しています。本人の選択、共通用紙、原記録保持、YYMMDDのファイル名を維持しています。
 
-小学生版の接続・保存に関する説明は、公式資料と配布元の実利用で再確認しました。0.4.0では、ChatGPTのGitHub接続でファイルの作成・追記・コミットができることを前提にし、有料プランやアプリを必須としない構成へ改めました。以前の版では通常のGitHubアプリを読み取り専用と記載し、Plus契約だけでは直接保存できると案内しません。料金の固定円換算や未検証の機能は引き継いでいません。
+小学生版の接続・保存に関する説明は、公式資料と配布元の実利用報告をもとに改訂しました。0.4.0では書込対応の案内を追加し、有料プランやアプリを必須としない構成へ改めました。0.5.0では配布元の報告と環境別の再現確認を区別し、接続名・プラン・保存経路を利用環境で確かめる説明に揃えています。以前の版の一律に読み取り専用とする説明は採用せず、契約だけで直接保存できるとも案内しません。料金の固定円換算や未検証の機能は引き継いでいません。
 
 [小学生版のLICENSE](https://github.com/risan-education/my-portfolio-elementary/blob/fe4388603266155ebf2e93d767f95f4d55fe7afc/LICENSE)はMITです。本教材の[LICENSE](../LICENSE)には Copyright (c) 2026 risan-education と許諾文を保持しています。
 
@@ -42,3 +42,11 @@ IBの公式概要、2027年初回評価の更新案内・概要PDF・ガイド�
 ChatGPTの契約・年齢条件・公式アプリ導入・接続は[はじめ方](getting-started.md)、能力の違いは[接続確認](connection-check.md)、ファイル編集は[デスクトップ補足](chatgpt-desktop.md)、GitHub登録は[基本ガイド](github-basics.md)に公式出典と確認日を記載しています。権限と移譲は[移行ガイド](migration.md)、履歴バックアップは[復元ガイド](backup-and-restore.md)、Claude Codeは[補足ガイド](claude-code.md)を参照してください。
 
 公式文書の確認と実アカウントでの操作確認は異なります。[受入確認](acceptance-review.md)に確認範囲を記録します。
+
+## 0.5.0の追加確認
+
+2026-09-27、[ChatGPTの利用環境](https://learn.chatgpt.com/docs/use-chatgpt)と[Codex cloud](https://learn.chatgpt.com/docs/cloud)を確認し、環境ごとの機能差とPRを使う流れを[接続の確認記録](connection-environments.md)へ反映しました。これは読者のアカウントでの書込検証ではありません。
+
+同日、[摂南大学2027年度募集要項](https://www.setsunan.ac.jp/admission/faculty/requirements/files/comprehensive/2027sougou_youkou.pdf)の生成AI利用に関する注意（PDFの3ページ目）を再確認しました。これを全提出先の条件へ拡張せず、[提出条件確認](../templates/submission-check.md)で今回の作業ごとの可否を確かめます。[法政大学の応募書類の説明](https://www.hosei.ac.jp/application/files/4016/0445/5727/ESPR_.pdf)の経験の過程を伝える観点と、ガクチカ・自己PR・志望動機の違いを[卒業後のガイド](after-high-school.md)へ反映しました。
+
+大学版が仮の要件定義段階であることは配布元の説明に基づきます。[共通仕様](portfolio-format.md)と[大学版への移行手順](migration-to-univ.md)は、この中高生版で新たに作成した設計案です。大学版の実装を参照・検証したものではありません。[探究レポート](../examples/inquiry-report.md)と[面接会話](../examples/interview-session.md)は、既存の架空原記録に基づく教材として作成しました。

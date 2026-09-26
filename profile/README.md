@@ -18,3 +18,5 @@ ChatGPTへの頼み方:
 AIに毎回自分のことを説明しなくて済むように、[AI向け自己紹介の現在版](../templates/ai-profile.md)をここに置けます。本人が確認した今の情報だけを書き、更新日を付けて見直します。渡し方は[AIへ持ち運ぶ](../docs/portability.md)を参照してください。
 
 [利用範囲の見直し用紙](../templates/record-use-review.md)も必要に応じて使えます。AIへ渡さない情報は、このリポジトリをAIへ接続する前に接続対象の外へ置きます。[共有のガイド](../docs/privacy.md)
+
+必要なら[記録の索引](../docs/record-index.md)をここに置けます。索引と移行確認メモは活動実績には数えません。大学版への準備は[移行ガイド](../docs/migration-to-univ.md)を使います。

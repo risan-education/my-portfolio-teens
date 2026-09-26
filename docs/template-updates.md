@@ -16,8 +16,10 @@
 3. 配布元の新しい版を別フォルダへ取得する。自分の保存先に丸ごと展開しない。
 4. templates/ と docs/ の差分を見て、必要な用紙・ガイドを選んでコピーする。自分で変更した用紙は比較し、別名で残してから選ぶ。
 5. AGENTS.md、補足用のCLAUDE.mdや .github/copilot-instructions.md の変更も読み、本人が望む利用範囲と合うか確かめる。
-6. README・questions.md・profile/ 等の自分の内容は上書きしない。experiences/・projects/・reflections/・annual-review/・derived/・assets/・practice/ も自分の記録を保つ。examples/ は配布元の架空例なので差し替えてよいが、自分の練習ファイルを examples/ に置いていた場合は先に practice/ へ移す。
+6. README・questions.md・profile/ 等の自分の内容は上書きしない。experiences/・projects/・reflections/・annual-review/・derived/・assets/・practice/・legacy/ も自分の記録を保つ。examples/ は配布元の架空例なので差し替えてよいが、自分の練習ファイルを examples/ に置いていた場合は先に practice/ へ移す。
 7. コピーした用紙の日付欄が空欄であること、相対リンクが開くことを確認する。
 8. 取り入れた版・日付・対象を別の更新メモへ残す。一部だけ更新した場合はその範囲を明記する。
 
 古い用紙で作った記録を新しい形式へ書き換える必要はありません。最新版の番号だけを変更して、全用紙を更新したことにしないでください。
+
+大学版は仮の要件定義段階です。準備が整った後の移行は[専用手順](migration-to-univ.md)を使います。配布元のdocs/prompt/は開発記録として保持し、本人の実績検索には含めません。

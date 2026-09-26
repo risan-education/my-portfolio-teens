@@ -5,7 +5,16 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $rootPath = (Resolve-Path -LiteralPath $Root).Path
 $issues = [System.Collections.Generic.List[string]]::new()
+$reviews = [System.Collections.Generic.List[string]]::new()
 $files = [System.Collections.Generic.List[System.IO.FileInfo]]::new()
+
+function Add-LinkIssue([string]$Relative, [string]$Message) {
+    if ($Relative.StartsWith('legacy/')) {
+        $reviews.Add("${Relative}: $Message (preserve source; record in migration checklist)")
+    } else {
+        $issues.Add("${Relative}: $Message")
+    }
+}
 
 function Find-Markdown([string]$Directory) {
     foreach ($item in Get-ChildItem -LiteralPath $Directory -Force) {
@@ -28,7 +37,7 @@ function Test-Link([string]$Target, [System.IO.FileInfo]$File, [string]$Relative
     $targetText = $Target.Trim()
     if ($targetText -match '^(https?://|mailto:)') { return }
     if ($targetText -match '^[a-zA-Z][a-zA-Z0-9+.-]*:' -or $targetText.StartsWith('/')) {
-        $issues.Add("${Relative}: unsupported or absolute link: $targetText")
+        Add-LinkIssue $Relative "unsupported or absolute link: $targetText"
         return
     }
     $parts = $targetText -split '#', 2
@@ -38,11 +47,11 @@ function Test-Link([string]$Target, [System.IO.FileInfo]$File, [string]$Relative
     } else { $File.FullName }
     $relativeTarget = [System.IO.Path]::GetRelativePath($rootPath, $resolved)
     if ($relativeTarget -eq '..' -or $relativeTarget.StartsWith('../') -or $relativeTarget.StartsWith('..\')) {
-        $issues.Add("${Relative}: link leaves repository: $targetText")
+        Add-LinkIssue $Relative "link leaves repository: $targetText"
         return
     }
     if (-not (Test-Path -LiteralPath $resolved)) {
-        $issues.Add("${Relative}: missing link: $targetText")
+        Add-LinkIssue $Relative "missing link: $targetText"
         return
     }
     # Validate Markdown heading anchors. Other file formats are existence-only.
@@ -65,7 +74,7 @@ function Test-Link([string]$Target, [System.IO.FileInfo]$File, [string]$Relative
             $anchors.Add($anchor.Groups[1].Value)
         }
         if (-not $anchors.Contains([Uri]::UnescapeDataString($parts[1]))) {
-            $issues.Add("${Relative}: missing anchor: $targetText")
+            Add-LinkIssue $Relative "missing anchor: $targetText"
         }
     }
 }
@@ -75,7 +84,10 @@ foreach ($file in $files) {
     $relative = [System.IO.Path]::GetRelativePath($rootPath, $file.FullName).Replace('\', '/')
     $body = Get-Content -LiteralPath $file.FullName -Raw -Encoding utf8
     if ($body -match '\uFFFD') { $issues.Add("${relative}: invalid UTF-8 replacement character") }
-    if ($relative.StartsWith('templates/') -and $file.Name -ne 'README.md') {
+    if ($relative.StartsWith('legacy/')) {
+        # Archives retain source dates (including absent fields and blank old templates).
+        # This is not a content-equivalence check; run check-migration.ps1 separately.
+    } elseif ($relative.StartsWith('templates/') -and $file.Name -ne 'README.md') {
         foreach ($label in @('作成日', '更新日')) {
             if ($body -notmatch "(?m)^- ${label}:[ \t]*`r?$" -or $body -match "(?m)^- ${label}:[ \t]*\S") {
                 $issues.Add("${relative}: template $label must be blank")
@@ -115,6 +127,11 @@ $required = @(
     'templates/ai-context.md', 'templates/career-exploration.md', 'templates/submission-check.md', 'templates/record-use-review.md',
     'templates/admissions-plan.md', 'templates/admissions-output.md', 'templates/self-understanding.md',
     'templates/interview-prep.md', 'templates/ai-profile.md',
+    'templates/inquiry-report.md', 'templates/record-index.md',
+    'docs/migration-to-univ.md', 'docs/portfolio-format.md', 'docs/migration-verification.md',
+    'docs/record-index.md', 'docs/inquiry-report-guide.md', 'docs/connection-environments.md', 'docs/publication-guide.md',
+    'examples/inquiry-report.md', 'examples/interview-session.md', 'examples/migration-to-univ/README.md',
+    'scripts/check-migration.ps1',
     'docs/first-10-minutes.md', 'docs/interview-guide.md', 'docs/after-high-school.md', 'docs/portability.md',
     '.claude/skills/save-prompt/SKILL.md',
     'docs/admissions-guide.md', 'docs/self-understanding.md', 'examples/admissions-output.md', 'examples/self-understanding.md',
@@ -135,9 +152,13 @@ foreach ($path in $required) {
         $issues.Add("missing required file: $path")
     }
 }
+foreach ($review in $reviews) { Write-Output "REVIEW $review" }
 if ($issues.Count) {
     foreach ($issue in $issues) { Write-Output "ERROR $issue" }
     throw "Documentation check failed: $($issues.Count) issue(s)."
 }
 Write-Output "PASS: $($files.Count) Markdown files; relative links, date fields, fictional labels, and required files."
 Write-Output 'External URLs, access permissions, privacy, and factual accuracy require separate review.'
+if (@($files | Where-Object { [IO.Path]::GetRelativePath($rootPath, $_.FullName).Replace('\', '/').StartsWith('legacy/') }).Count) {
+    Write-Output 'Legacy dates are preserved, not normalized. Run check-migration.ps1 for permitted source/destination content comparison.'
+}
