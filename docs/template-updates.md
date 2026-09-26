@@ -1,7 +1,7 @@
 # テンプレートを更新する
 
 - 作成日: 2026-09-26
-- 更新日: 2026-09-26
+- 更新日: 2026-09-27
 
 自分の記録を残したまま、必要な新しい用紙だけを取り入れます。配布元の変更は自分用リポジトリへ自動反映されません。
 
@@ -9,14 +9,14 @@
 
 > ChatGPTで使う指示書とガイドを更新したいです。配布元と自分用の差分を確認し、私の実記録を上書きしない更新案を示してください。
 
-案を確認してから更新を依頼し、保存後にAGENTS.mdを読み直してもらいます。読み取り専用の場合は、変更案を[手動で反映](manual-editing.md)します。
+案を確認してから更新を依頼し、保存後にAGENTS.mdを読み直してもらいます。保存機能が使えない場合は、変更案を[手動で反映](manual-editing.md)します。
 
 1. 現在の VERSION と[変更履歴](../CHANGELOG.md)を確認する。
 2. [バックアップと復元](backup-and-restore.md)で、控えが開けることを確かめる。
 3. 配布元の新しい版を別フォルダへ取得する。自分の保存先に丸ごと展開しない。
 4. templates/ と docs/ の差分を見て、必要な用紙・ガイドを選んでコピーする。自分で変更した用紙は比較し、別名で残してから選ぶ。
 5. AGENTS.md、補足用のCLAUDE.mdや .github/copilot-instructions.md の変更も読み、本人が望む利用範囲と合うか確かめる。
-6. README・questions.md・profile/ 等の自分の内容は上書きしない。experiences/・projects/・reflections/・annual-review/・derived/・assets/ も自分の記録を保つ。
+6. README・questions.md・profile/ 等の自分の内容は上書きしない。experiences/・projects/・reflections/・annual-review/・derived/・assets/・practice/ も自分の記録を保つ。examples/ は配布元の架空例なので差し替えてよいが、自分の練習ファイルを examples/ に置いていた場合は先に practice/ へ移す。
 7. コピーした用紙の日付欄が空欄であること、相対リンクが開くことを確認する。
 8. 取り入れた版・日付・対象を別の更新メモへ残す。一部だけ更新した場合はその範囲を明記する。
 

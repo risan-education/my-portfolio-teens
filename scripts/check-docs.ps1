@@ -91,7 +91,7 @@ foreach ($file in $files) {
             }
         }
     }
-    if ($relative.StartsWith('examples/') -and $body -notmatch '架空') {
+    if (($relative.StartsWith('examples/') -or $relative.StartsWith('practice/')) -and $body -notmatch '架空') {
         $issues.Add("${relative}: fictional example must be labelled")
     }
     $prose = Remove-Code $body
@@ -109,11 +109,14 @@ foreach ($file in $files) {
 $required = @(
     'README.md', 'AGENTS.md', 'CLAUDE.md', 'LICENSE', 'VERSION', 'CHANGELOG.md', '.github/copilot-instructions.md',
     'profile/README.md', 'experiences/README.md', 'projects/README.md', 'reflections/README.md',
-    'annual-review/README.md', 'derived/README.md', 'assets/README.md', 'questions.md',
+    'annual-review/README.md', 'derived/README.md', 'assets/README.md', 'practice/README.md', 'questions.md',
     'templates/quick-note.md', 'templates/experience.md', 'templates/inquiry.md', 'templates/inquiry-project.md',
     'templates/work.md', 'templates/reflection.md', 'templates/annual-review.md', 'templates/evidence-summary.md',
     'templates/ai-context.md', 'templates/career-exploration.md', 'templates/submission-check.md', 'templates/record-use-review.md',
     'templates/admissions-plan.md', 'templates/admissions-output.md', 'templates/self-understanding.md',
+    'templates/interview-prep.md', 'templates/ai-profile.md',
+    'docs/first-10-minutes.md', 'docs/interview-guide.md', 'docs/after-high-school.md', 'docs/portability.md',
+    '.claude/skills/save-prompt/SKILL.md',
     'docs/admissions-guide.md', 'docs/self-understanding.md', 'examples/admissions-output.md', 'examples/self-understanding.md',
     'docs/inquiry-theme-sources.md', 'examples/inquiry-themes/README.md',
     'docs/extended-essay-guide.md', 'docs/choosing-inquiry-theme.md', 'examples/extended-essay/README.md', 'examples/theme-selection.md',
