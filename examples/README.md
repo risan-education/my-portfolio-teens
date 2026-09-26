@@ -27,3 +27,7 @@
 
 - [探究レポート](inquiry-report.md) → [面接練習](interview-session.md)：同じ原記録に戻って説明と限界を確かめます。
 - [大学版への移行準備](migration-to-univ/README.md)：日付欄のない記録・相対リンク・利用停止・重複を扱います。大学版との実移行の完了例ではありません。
+
+## 架空例のライセンス
+
+Copyright © 2026 adash333。オリジナルの架空例は[CC BY 4.0](../LICENSES/CC-BY-4.0.txt)です。小学生版から原文のまま取り込んだ[shadow-note.md](migration/experiences/shadow-note.md)は[従来のMIT](../LICENSES/MIT-elementary.txt)のままです。[再利用の記録](../docs/sources.md)と[適用範囲](../LICENSE)を確認してください。本人の記録へ自動適用するものではありません。

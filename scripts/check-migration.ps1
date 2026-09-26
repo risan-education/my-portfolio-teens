@@ -1,4 +1,6 @@
 #requires -Version 7.0
+# SPDX-License-Identifier: MIT
+# See ../LICENSES/MIT.txt for copyright and permission notices.
 param(
     [Parameter(Mandatory)][string]$Source,
     [Parameter(Mandatory)][string]$Destination,

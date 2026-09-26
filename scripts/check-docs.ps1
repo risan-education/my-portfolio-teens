@@ -1,4 +1,6 @@
 #requires -Version 7.0
+# SPDX-License-Identifier: MIT
+# See ../LICENSES/MIT.txt for copyright and permission notices.
 param([string]$Root = (Split-Path -Parent $PSScriptRoot))
 
 Set-StrictMode -Version Latest
@@ -19,7 +21,7 @@ function Add-LinkIssue([string]$Relative, [string]$Message) {
 function Find-Markdown([string]$Directory) {
     foreach ($item in Get-ChildItem -LiteralPath $Directory -Force) {
         if ($item.PSIsContainer) {
-            if ($item.Name -notin @('.git', '.scratch', 'backups', 'node_modules')) {
+            if ($item.Name -notin @('.git', '.scratch', '.codex-remote-attachments', 'backups', 'node_modules')) {
                 Find-Markdown $item.FullName
             }
         } elseif ($item.Extension -eq '.md') {
@@ -119,6 +121,7 @@ foreach ($file in $files) {
 }
 
 $required = @(
+    'LICENSES/CC-BY-4.0.txt', 'LICENSES/MIT.txt', 'LICENSES/MIT-elementary.txt', 'docs/license-guide.md',
     'README.md', 'AGENTS.md', 'CLAUDE.md', 'LICENSE', 'VERSION', 'CHANGELOG.md', '.github/copilot-instructions.md',
     'profile/README.md', 'experiences/README.md', 'projects/README.md', 'reflections/README.md',
     'annual-review/README.md', 'derived/README.md', 'assets/README.md', 'practice/README.md', 'questions.md',

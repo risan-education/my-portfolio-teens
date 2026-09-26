@@ -1,4 +1,6 @@
 #requires -Version 7.0
+# SPDX-License-Identifier: MIT
+# See ../LICENSES/MIT.txt for copyright and permission notices.
 param([string]$Root = (Split-Path -Parent $PSScriptRoot))
 
 Set-StrictMode -Version Latest
@@ -30,7 +32,7 @@ function Check-Migration([bool]$ShouldPass, [string]$ExpectedText) {
 
 try {
     foreach ($item in Get-ChildItem -LiteralPath $rootPath -Force) {
-        if ($item.Name -notin @('.git', '.scratch', 'backups', 'node_modules')) {
+        if ($item.Name -notin @('.git', '.scratch', '.codex-remote-attachments', 'backups', 'node_modules')) {
             Copy-Item -LiteralPath $item.FullName -Destination $fixture -Recurse -Force
         }
     }

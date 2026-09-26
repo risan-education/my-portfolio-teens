@@ -52,3 +52,7 @@
 
 ## 追記・訂正
 <!-- 日付・理由・変更前の内容。 -->
+
+---
+用紙の権利表示（記入内容とは別）: Copyright © 2026 adash333 / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。[元の教材・適用範囲・従来のMIT表示](https://github.com/risan-education/my-portfolio-teens/blob/main/LICENSE)。
+<!-- 本人独自の活動記録・ES・提出本文へこの表示を自動挿入しない。用紙自体の再配布は適用条件に従う。 -->
