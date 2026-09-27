@@ -3,16 +3,16 @@
 - 作成日: 2026-09-27
 - 更新日: 2026-09-27
 
-Copyright © 2026 adash333。配布元はrisan-educationです。初版の公開時から、権利を保有するオリジナルの教材はCC BY 4.0、プログラム部分はMITとして範囲を分けます。[LICENSE](../LICENSE)が適用範囲の入口です。
+Copyright © 2026 adash333。配布元はrisan-educationです。初版の公開時から、権利を保有するオリジナルの教材はCC BY 4.0、プログラム部分はMITとして範囲を分けます。[NOTICE.md](../NOTICE.md)が適用範囲の入口です。[LICENSE](../LICENSE)はCC BY 4.0の正式本文（英語原文）です。
 
 ## 対象と例外
 
 | 対象 | 適用する条件 |
 | --- | --- |
-| オリジナルの文章・ガイド・用紙・架空例・AI向け指示 | [CC BY 4.0の正式本文](../LICENSES/CC-BY-4.0.txt)。著作権は保持する |
+| オリジナルの文章・ガイド・用紙・架空例・AI向け指示 | [CC BY 4.0の正式本文](../LICENSE)。著作権は保持する |
 | scripts/*.ps1、.github/workflows/*.yml、.gitattributes、.gitignore | [MIT](../LICENSES/MIT.txt)。従来のrisan-education表示も保持 |
 | 小学生版のMIT版から再利用した部分 | [従来のMIT表示と全文](../LICENSES/MIT-elementary.txt)を維持。[参照元と範囲](sources.md)を確認 |
-| 原文のまま引き継いだshadow-note.md | MITのまま。本文・日付を変更せず、[移行例の案内](../examples/migration/README.md)とLICENSEから表示を参照 |
+| 原文のまま引き継いだshadow-note.md | MITのまま。本文・日付を変更せず、[移行例の案内](../examples/migration/README.md)とNOTICE.mdから表示を参照 |
 | 外部の公式資料・第三者の著作物・別条件の寄稿 | 各権利者の表示・条件を保持。単なるリンクを再配布許諾としない |
 | 利用者が新しく書いた文章・写真・作品 | 各権利者に帰属。本教材のライセンスを自動適用しない |
 
@@ -39,3 +39,5 @@ CC BY 4.0は条件に従う商用利用・改変・再配布を認めます。�
 本教材は初版からCC BY 4.0で案内します。開発中の版番号を、MITで公開済みの教材の版として扱いません。CC BY 4.0の条件については[CCの公式FAQ](https://creativecommons.org/faq/)も参照できます。
 
 適用対象はこの中高生版だけです。小学生版・大学版のリポジトリは今回変更していません。公開への反映はコミット・pushの結果で別途確認します。
+
+2026-09-27追記: 大学生版と同じ構成にするため、CC BY 4.0の正式本文をLICENSESからLICENSEへ移し、日本語の著作権表示・適用範囲の案内をNOTICE.mdへ移しました。MITの正式本文と小学生版由来の表示はLICENSES/に残しています。ライセンスの内容自体は変えていません。

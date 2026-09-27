@@ -121,7 +121,7 @@ foreach ($file in $files) {
 }
 
 $required = @(
-    'LICENSES/CC-BY-4.0.txt', 'LICENSES/MIT.txt', 'LICENSES/MIT-elementary.txt', 'docs/license-guide.md',
+    'NOTICE.md', 'LICENSES/MIT.txt', 'LICENSES/MIT-elementary.txt', 'docs/license-guide.md',
     'README.md', 'AGENTS.md', 'CLAUDE.md', 'LICENSE', 'VERSION', 'CHANGELOG.md', '.github/copilot-instructions.md',
     'profile/README.md', 'experiences/README.md', 'projects/README.md', 'reflections/README.md',
     'annual-review/README.md', 'derived/README.md', 'assets/README.md', 'practice/README.md', 'questions.md',

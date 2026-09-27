@@ -30,4 +30,4 @@
 
 ## 架空例のライセンス
 
-Copyright © 2026 adash333。オリジナルの架空例は[CC BY 4.0](../LICENSES/CC-BY-4.0.txt)です。小学生版から原文のまま取り込んだ[shadow-note.md](migration/experiences/shadow-note.md)は[従来のMIT](../LICENSES/MIT-elementary.txt)のままです。[再利用の記録](../docs/sources.md)と[適用範囲](../LICENSE)を確認してください。本人の記録へ自動適用するものではありません。
+Copyright © 2026 adash333。オリジナルの架空例は[CC BY 4.0](../LICENSE)です。小学生版から原文のまま取り込んだ[shadow-note.md](migration/experiences/shadow-note.md)は[従来のMIT](../LICENSES/MIT-elementary.txt)のままです。[再利用の記録](../docs/sources.md)と[適用範囲](../NOTICE.md)を確認してください。本人の記録へ自動適用するものではありません。

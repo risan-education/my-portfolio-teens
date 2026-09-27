@@ -1,0 +1,65 @@
+# 著作権表示と適用範囲（NOTICE）
+
+- 作成日: 2026-09-27
+- 更新日: 2026-09-27
+
+Myポートフォリオ〈中高生版〉 — 著作権とライセンス
+
+Copyright © 2026 adash333
+著作者の表示名: adash333
+配布元: risan-education
+元のリポジトリ: https://github.com/risan-education/my-portfolio-teens
+ライセンス方針の確認日: 2026-09-27
+
+1. オリジナルの教材: CC BY 4.0
+
+初版の公開時から、adash333が権利を保有するオリジナルの文章・テンプレート・架空の記入例を、
+Creative Commons Attribution 4.0 International（CC BY 4.0）で提供します。
+著作権は保持し、CC0による放棄は行いません。
+
+対象はREADME.md、AGENTS.md、CLAUDE.md、CHANGELOG.md、questions.md、
+templates/、examples/、docs/、各記録フォルダの配布用README、
+.github/copilot-instructions.md、.claude/skills/の文章です。
+下記の第三者由来の部分、正式ライセンス本文、利用者の実記録は除きます。
+
+正式本文（英語原文）: 同じフォルダの LICENSE ファイル
+公式本文: https://creativecommons.org/licenses/by/4.0/legalcode
+日本語の概要: https://creativecommons.org/licenses/by/4.0/deed.ja
+
+条件に従う商用利用・改変・再配布を認めます。著作者・著作権・ライセンス・
+免責の表示、元資料へのリンク、変更した場合の表示等を合理的な方法で行ってください。
+無保証・責任制限を含む正式な条件は上記本文に従います。
+
+2. プログラム・設定: MIT
+
+scripts/*.ps1、.github/workflows/*.yml、.gitattributes、.gitignoreは
+MITライセンスで提供します。正式本文はLICENSES/MIT.txtです。
+既存のCopyright (c) 2026 risan-educationの表示も保持しています。
+
+3. 第三者由来の部分・例外
+
+小学生版my-portfolio-elementaryのMIT版から再利用した部分は、元の
+Copyright (c) 2026 risan-educationとMITの許諾・免責を保持します。
+そのまま取り込んだexamples/migration/experiences/shadow-note.mdはMITのままです。
+元の著作権表示と正式本文: LICENSES/MIT-elementary.txt
+参照元・版・再利用範囲: docs/sources.md
+
+再利用した部分を含む教材では、新しいオリジナル部分のCC BY 4.0と
+元のMIT部分の表示を併せて保持します。他の権利者の権利をadash333へ移すものではありません。
+外部の公式資料、質問紙、写真、論文等には各権利者の条件が適用されます。
+参照やリンクだけで本教材のライセンスを適用するものではありません。
+寄稿等に別の権利表示がある場合は保持し、権利を確認せず一括で変更しません。
+
+4. 利用者の記録
+
+利用者が新たに記入・追加した文章・写真・作品の権利はそれぞれの権利者に帰属します。
+本教材のライセンスを自動適用せず、記録の公開を求めません。移行でも再ライセンスしません。
+本人の独自の活動記録・ES・提出本文へ教材の権利表示を自動挿入しません。
+教材の表現を再配布する場合は、その教材に適用される条件に従ってください。
+
+5. 表示例
+
+詳しい範囲・表示例・確認記録: docs/license-guide.md
+
+このファイルは適用範囲の案内です。正式なライセンス本文を変更するものではありません。
+2026-09-27: CC BY 4.0の正式本文をLICENSEへ移し、この案内をLICENSEからNOTICE.mdへ移しました（大学生版と同じ構成）。

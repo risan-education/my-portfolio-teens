@@ -271,7 +271,7 @@ scripts/
 .claude/skills/save-prompt/SKILL.md（作業記録の保存とmainへのpush）
 ```
 
-初版の公開時から、オリジナルの文章・用紙・架空例はCC BY 4.0、scripts/*.ps1・.github/workflows/*.yml・.gitattributes・.gitignoreはMITとする。著作権表示はCopyright © 2026 adash333（権利を保有する部分のみ）、配布元はrisan-education。LICENSEで範囲を示し、LICENSES/に正式本文を収録する。
+初版の公開時から、オリジナルの文章・用紙・架空例はCC BY 4.0、scripts/*.ps1・.github/workflows/*.yml・.gitattributes・.gitignoreはMITとする。著作権表示はCopyright © 2026 adash333（権利を保有する部分のみ）、配布元はrisan-education。LICENSEにCC BY 4.0の正式本文（英語原文）を収録し、NOTICE.mdで範囲を示す。MITの正式本文と小学生版由来の表示はLICENSES/に収録する。
 
 小学生版のMIT部分はCopyright (c) 2026 risan-educationと許諾・免責を保持する。原文の架空記録を一括で再ライセンスしない。本人の新しい文章・写真・作品や、外部の第三者資料に本教材のライセンスを自動適用しない。
 

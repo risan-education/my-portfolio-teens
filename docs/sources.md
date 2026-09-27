@@ -11,7 +11,7 @@ README、はじめ方、GitHubの基本、AIガイド、接続確認、Claude Co
 
 小学生版の接続・保存に関する説明は、公式資料と配布元の実利用報告をもとに改訂しました。0.4.0では書込対応の案内を追加し、有料プランやアプリを必須としない構成へ改めました。0.5.0では配布元の報告と環境別の再現確認を区別し、接続名・プラン・保存経路を利用環境で確かめる説明に揃えています。以前の版の一律に読み取り専用とする説明は採用せず、契約だけで直接保存できるとも案内しません。料金の固定円換算や未検証の機能は引き継いでいません。
 
-[小学生版のLICENSE](https://github.com/risan-education/my-portfolio-elementary/blob/fe4388603266155ebf2e93d767f95f4d55fe7afc/LICENSE)はMITです。再利用した部分の Copyright (c) 2026 risan-education と許諾・免責全文は [LICENSES/MIT-elementary.txt](../LICENSES/MIT-elementary.txt) に保持しています。中高生版のオリジナル部分は初版の公開時からCC BY 4.0とし、[LICENSE](../LICENSE)で範囲を分けます。原文のまま取り込んだshadow-note.mdはMITのままで、他の権利者の表示をadash333へ置き換えません。
+[小学生版のLICENSE](https://github.com/risan-education/my-portfolio-elementary/blob/fe4388603266155ebf2e93d767f95f4d55fe7afc/LICENSE)はMITです。再利用した部分の Copyright (c) 2026 risan-education と許諾・免責全文は [LICENSES/MIT-elementary.txt](../LICENSES/MIT-elementary.txt) に保持しています。中高生版のオリジナル部分は初版の公開時からCC BY 4.0とし、[NOTICE.md](../NOTICE.md)で範囲を分けます。原文のまま取り込んだshadow-note.mdはMITのままで、他の権利者の表示をadash333へ置き換えません。
 
 [引き継いだ架空記録](../examples/migration/experiences/shadow-note.md)は、同コミットの [examples/shadow-note.md](https://github.com/risan-education/my-portfolio-elementary/blob/fe4388603266155ebf2e93d767f95f4d55fe7afc/examples/shadow-note.md)をファイル名・本文・日付を変えずに収録したものです。案内と現在の振り返りは別ファイルにしました。
 

@@ -124,9 +124,9 @@ Copyright © 2026 adash333
 
 本リポジトリのオリジナルの文章・テンプレート・架空の記入例は、初版の公開時から[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)で提供します。adash333が権利を保有する部分の著作権は保持し、放棄するものではありません。
 
-条件に従い、著作者表示、ライセンスへのリンク、改変した場合の変更表示などを行うことで、商用利用・改変・再配布ができます。[正式本文](LICENSES/CC-BY-4.0.txt)／[表示例](docs/license-guide.md)
+条件に従い、著作者表示、ライセンスへのリンク、改変した場合の変更表示などを行うことで、商用利用・改変・再配布ができます。[正式本文](LICENSE)／[表示例](docs/license-guide.md)
 
-プログラム部分は[MIT](LICENSES/MIT.txt)です。適用範囲と第三者素材の扱いは[LICENSE](LICENSE)を参照してください。[小学生版](https://github.com/risan-education/my-portfolio-elementary)由来のMIT部分は、[従来の表示と許諾](LICENSES/MIT-elementary.txt)を保持します。[再利用の記録](docs/sources.md)
+プログラム部分は[MIT](LICENSES/MIT.txt)です。適用範囲と第三者素材の扱いは[NOTICE.md](NOTICE.md)を参照してください。[小学生版](https://github.com/risan-education/my-portfolio-elementary)由来のMIT部分は、[従来の表示と許諾](LICENSES/MIT-elementary.txt)を保持します。[再利用の記録](docs/sources.md)
 
 利用者が新しく記入・追加した文章・写真・作品の権利はそれぞれの権利者に帰属し、本教材のライセンスを自動適用しません。個人の記録を公開する必要もありません。第三者の著作物には各権利者の表示と利用条件が適用されます。
 

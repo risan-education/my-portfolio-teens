@@ -26,4 +26,4 @@
 
 ## 用紙の権利表示
 
-Copyright © 2026 adash333。オリジナルの用紙は[CC BY 4.0](../LICENSES/CC-BY-4.0.txt)、小学生版由来の部分の[MIT表示](../LICENSES/MIT-elementary.txt)は保持します。[適用範囲と表示例](../docs/license-guide.md)。本人独自の記録・ESへ用紙の表示を自動挿入せず、記入した内容の権利と区別します。
+Copyright © 2026 adash333。オリジナルの用紙は[CC BY 4.0](../LICENSE)、小学生版由来の部分の[MIT表示](../LICENSES/MIT-elementary.txt)は保持します。[適用範囲と表示例](../docs/license-guide.md)。本人独自の記録・ESへ用紙の表示を自動挿入せず、記入した内容の権利と区別します。

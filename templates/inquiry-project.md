@@ -140,5 +140,5 @@
 6段階は共通ですが、課題は社会の困りごとだけでなく、まだ分からない問いも含みます。「現場で確かめる」には観察・実験・文献や原資料の分析・計算・証明の検討を含めます。発信は授業内の報告、協働は先生や友人の批評を受けた改善でも構いません。段階の番号を能力・合否に対応させません。未実施は保留・お休みとして理由と再検討時期を残します。
 
 ---
-用紙の権利表示（記入内容とは別）: Copyright © 2026 adash333 / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。[元の教材・適用範囲・従来のMIT表示](https://github.com/risan-education/my-portfolio-teens/blob/main/LICENSE)。
+用紙の権利表示（記入内容とは別）: Copyright © 2026 adash333 / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。[元の教材・適用範囲・従来のMIT表示](https://github.com/risan-education/my-portfolio-teens/blob/main/NOTICE.md)。
 <!-- 本人独自の活動記録・ES・提出本文へこの表示を自動挿入しない。用紙自体の再配布は適用条件に従う。 -->
