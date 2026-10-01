@@ -61,6 +61,23 @@ try {
     Check-Fixture $true 'PASS:'
     Write-Output 'PASS: checker accepts repository and rejects broken links, anchors, filled dates, and unlabelled examples.'
 
+    # A-32: omit a learner answer only from the saved example, then restore it.
+    $promptRecordPath = Join-Path $fixture 'examples/prompts/records/experiences/2026/260511-deep-sea-book.md'
+    $promptRecord = Get-Content -LiteralPath $promptRecordPath -Raw -Encoding utf8
+    $answer = '書いてなかったと思う。途中を飛ばして読んだので、自信はない。'
+    Assert ($promptRecord.Contains($answer)) 'Missing baseline learner answer.'
+    [IO.File]::WriteAllText($promptRecordPath, $promptRecord.Replace($answer, ''))
+    Check-Fixture $false 'Learner original missing from record'
+    [IO.File]::WriteAllText($promptRecordPath, $promptRecord)
+
+    $questionPath = Join-Path $fixture 'examples/prompts/records/questions.md'
+    $questionText = Get-Content -LiteralPath $questionPath -Raw -Encoding utf8
+    [IO.File]::WriteAllText($questionPath, $questionText.Replace(' | 次に本人が選んだこと |', ' |'))
+    Check-Fixture $false 'must have five columns'
+    [IO.File]::WriteAllText($questionPath, $questionText)
+    Check-Fixture $true 'PASS:'
+    Write-Output 'PASS: missing learner originals and malformed fictional questions tables are rejected.'
+
     # A-01/A-03/A-08: only one sentence is needed; all optional fields stay empty.
     $practicePath = Join-Path $fixture 'experiences/practice.md'
     $practice = $template.Replace('- 作成日:', '- 作成日: 2026-09-26').Replace('- 更新日:', '- 更新日: 2026-09-26')

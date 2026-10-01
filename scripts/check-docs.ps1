@@ -135,6 +135,7 @@ $required = @(
     'docs/record-index.md', 'docs/inquiry-report-guide.md', 'docs/connection-environments.md', 'docs/publication-guide.md',
     'examples/inquiry-report.md', 'examples/interview-session.md', 'examples/migration-to-univ/README.md',
     'scripts/check-migration.ps1',
+    'scripts/check-prompt-examples.ps1', 'examples/prompts/README.md', 'examples/prompts/short-sessions.md',
     'docs/first-10-minutes.md', 'docs/interview-guide.md', 'docs/after-high-school.md', 'docs/portability.md',
     '.claude/skills/save-prompt/SKILL.md',
     'docs/admissions-guide.md', 'docs/self-understanding.md', 'examples/admissions-output.md', 'examples/self-understanding.md',
@@ -162,6 +163,7 @@ if ($issues.Count) {
 }
 Write-Output "PASS: $($files.Count) Markdown files; relative links, date fields, fictional labels, and required files."
 Write-Output 'External URLs, access permissions, privacy, and factual accuracy require separate review.'
+& (Join-Path $rootPath 'scripts/check-prompt-examples.ps1') -Root $rootPath
 if (@($files | Where-Object { [IO.Path]::GetRelativePath($rootPath, $_.FullName).Replace('\', '/').StartsWith('legacy/') }).Count) {
     Write-Output 'Legacy dates are preserved, not normalized. Run check-migration.ps1 for permitted source/destination content comparison.'
 }
