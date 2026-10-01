@@ -162,9 +162,9 @@ ChatGPT:
 
 ## 保存先・呼び出し方・一覧
 
-- 保存先: `projects/bicycle-crossing/270602-inquiry-start.md`。テーマの入口は `projects/bicycle-crossing/README.md`（状態・更新日・各記録へのリンク）。
+- 保存先: [`projects/`](../../projects/README.md)`bicycle-crossing/270602-inquiry-start.md`。テーマの入口は [`projects/`](../../projects/README.md)`bicycle-crossing/README.md`（状態・更新日・各記録へのリンク）。
 - 呼び出し方: 「projects/bicycle-crossing/ の探究ノートを読み直して、今朝の観察を実施記録に追記する案を見せてください」。
-- 一覧: `projects/bicycle-crossing/README.md` と `questions.md`。「projects/ で状態が途中の探究を一覧にして」でも探せます。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+- 一覧: [`projects/`](../../projects/README.md)`bicycle-crossing/README.md` と [`questions.md`](../../questions.md)。「projects/ で状態が途中の探究を一覧にして」でも探せます。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
 
 ## この例のポイント
 

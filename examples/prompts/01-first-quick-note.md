@@ -86,9 +86,9 @@ questions.md への追記（1行）:
 
 ## 保存先・呼び出し方・一覧
 
-- 保存先: `experiences/260511-deep-sea-book.md`。問いは `questions.md` に1行。
+- 保存先: [`experiences/`](../../experiences/README.md)`260511-deep-sea-book.md`。問いは [`questions.md`](../../questions.md) に1行。
 - 呼び出し方: 「experiences/260511-deep-sea-book.md を読み直して、読み直した結果を追記する案を見せてください」。ファイル名を忘れたら「experiences/ の2026年5月の記録を一覧にして」。
-- 一覧: `experiences/` フォルダ（GitHubで開くと日付順）と `questions.md`。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+- 一覧: [`experiences/`](../../experiences/README.md) フォルダ（GitHubで開くと日付順）と [`questions.md`](../../questions.md)。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
 
 ## この例のポイント
 

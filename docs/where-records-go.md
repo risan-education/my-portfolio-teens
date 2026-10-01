@@ -9,28 +9,28 @@ ChatGPTに話しかけて作った記録が、自分用Privateのどこに保存
 
 | 記録の種類 | 用紙 | 保存先とファイル名の例 | 一覧（リスト）の場所 |
 | --- | --- | --- | --- |
-| 一言メモ | [一言メモ](../templates/quick-note.md) | `experiences/260511-deep-sea-book.md`（年ごとに分けるなら `experiences/2026/`） | `experiences/` フォルダ自体。GitHubで開くと日付順に並ぶ |
-| 活動記録 | [活動記録](../templates/experience.md) | `experiences/260919-school-festival.md` | 同上 |
-| 探究ノート | [探究ノート](../templates/inquiry.md) | `projects/bicycle-crossing/270602-inquiry-start.md` | `projects/<テーマ>/README.md`（テーマの入口。状態と各記録へのリンク） |
-| 作品カード | [作品カード](../templates/work.md) | `projects/timetable-app/280520-work-card.md` | 同上 |
-| 主テーマの6段階 | [探究プロジェクト](../templates/inquiry-project.md) | `projects/<テーマ>/README.md` | このファイル自体が入口・一覧 |
-| 振り返り | [振り返り](../templates/reflection.md) | `reflections/271220-term-end.md` | `reflections/` フォルダ |
-| 年間振り返り | [年間振り返り](../templates/annual-review.md) | `annual-review/270331-annual-review.md` | `annual-review/` フォルダ |
-| 問い | （1行ずつ追記） | `questions.md` | このファイル自体が一覧。日付・問い・状態・元記録へのリンク |
-| 今の自分・AI向け自己紹介 | [AI向け自己紹介](../templates/ai-profile.md)ほか | `profile/` | `profile/` フォルダ |
-| 要約・提出用材料・面接準備 | [根拠付き要約](../templates/evidence-summary.md)ほか | `derived/271101-summary.md` | `derived/` フォルダ。各項目に元記録へのリンク |
-| 写真・資料の所在メモ | （所在メモ） | `assets/` | `assets/` フォルダ |
-| 練習（架空） | 任意 | `practice/` | `practice/` フォルダ。実績に含めない |
-| 記録の索引 | [索引](../templates/record-index.md) | `profile/271220-record-index.md` | 記録が増えたときの手作りの一覧 |
+| 一言メモ | [一言メモ](../templates/quick-note.md) | [`experiences/`](../experiences/README.md)`260511-deep-sea-book.md`（年ごとに分けるなら [`experiences/`](../experiences/README.md)`2026/`） | [`experiences/`](../experiences/README.md) フォルダ自体。GitHubで開くと日付順に並ぶ |
+| 活動記録 | [活動記録](../templates/experience.md) | [`experiences/`](../experiences/README.md)`260919-school-festival.md` | 同上 |
+| 探究ノート | [探究ノート](../templates/inquiry.md) | [`projects/`](../projects/README.md)`bicycle-crossing/270602-inquiry-start.md` | [`projects/`](../projects/README.md)`<テーマ>/README.md`（テーマの入口。状態と各記録へのリンク） |
+| 作品カード | [作品カード](../templates/work.md) | [`projects/`](../projects/README.md)`timetable-app/280520-work-card.md` | 同上 |
+| 主テーマの6段階 | [探究プロジェクト](../templates/inquiry-project.md) | [`projects/`](../projects/README.md)`<テーマ>/README.md` | このファイル自体が入口・一覧 |
+| 振り返り | [振り返り](../templates/reflection.md) | [`reflections/`](../reflections/README.md)`271220-term-end.md` | [`reflections/`](../reflections/README.md) フォルダ |
+| 年間振り返り | [年間振り返り](../templates/annual-review.md) | [`annual-review/`](../annual-review/README.md)`270331-annual-review.md` | [`annual-review/`](../annual-review/README.md) フォルダ |
+| 問い | （1行ずつ追記） | [`questions.md`](../questions.md) | このファイル自体が一覧。日付・問い・状態・元記録へのリンク |
+| 今の自分・AI向け自己紹介 | [AI向け自己紹介](../templates/ai-profile.md)ほか | [`profile/`](../profile/README.md) | [`profile/`](../profile/README.md) フォルダ |
+| 要約・提出用材料・面接準備 | [根拠付き要約](../templates/evidence-summary.md)ほか | [`derived/`](../derived/README.md)`271101-summary.md` | [`derived/`](../derived/README.md) フォルダ。各項目に元記録へのリンク |
+| 写真・資料の所在メモ | （所在メモ） | [`assets/`](../assets/README.md) | [`assets/`](../assets/README.md) フォルダ |
+| 練習（架空） | 任意 | [`practice/`](../practice/README.md) | [`practice/`](../practice/README.md) フォルダ。実績に含めない |
+| 記録の索引 | [索引](../templates/record-index.md) | [`profile/`](../profile/README.md)`271220-record-index.md` | 記録が増えたときの手作りの一覧 |
 
-ファイル名は `YYMMDD-theme.md`（活動日の下2桁年・月・日と短い英語）です。活動日不明なら `experiences/unknown/date-unknown-theme.md`、同名があれば `-02` を付けます。[日付のルール](file-dates.md)
+ファイル名は `YYMMDD-theme.md`（活動日の下2桁年・月・日と短い英語）です。活動日不明なら [`experiences/`](../experiences/README.md)`unknown/date-unknown-theme.md`、同名があれば `-02` を付けます。[日付のルール](file-dates.md)
 
 ## 一覧の見方
 
-- **フォルダがそのまま一覧です。** GitHubで `experiences/` や `projects/` を開くと、ファイル名の日付順に並びます。目次ファイルを別に作る必要はありません。
-- **問いの一覧は questions.md。** 記録から生まれた問いを1行ずつためます。状態（これから・途中・ひと区切り・保留・お休み）と元記録へのリンクが付きます。
-- **探究はテーマの入口から。** `projects/<テーマ>/README.md` に、その探究の状態・更新日・各記録へのリンクを置きます。
-- **記録が増えたら索引。** フォルダと questions.md で探しにくくなったら、[索引用紙](../templates/record-index.md)で `profile/` に入口を作ります。作り方は[記録の索引](record-index.md)にあります。
+- **フォルダがそのまま一覧です。** GitHubで [`experiences/`](../experiences/README.md) や [`projects/`](../projects/README.md) を開くと、ファイル名の日付順に並びます。目次ファイルを別に作る必要はありません。
+- **問いの一覧は [questions.md](../questions.md)。** 記録から生まれた問いを1行ずつためます。状態（これから・途中・ひと区切り・保留・お休み）と元記録へのリンクが付きます。
+- **探究はテーマの入口から。** [`projects/`](../projects/README.md)`<テーマ>/README.md` に、その探究の状態・更新日・各記録へのリンクを置きます。
+- **記録が増えたら索引。** フォルダと [questions.md](../questions.md) で探しにくくなったら、[索引用紙](../templates/record-index.md)で [`profile/`](../profile/README.md) に入口を作ります。作り方は[記録の索引](record-index.md)にあります。
 
 ## 呼び出し方（ChatGPTへの言い方）
 

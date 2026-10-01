@@ -109,9 +109,9 @@ ChatGPT:
 
 ## 保存先・呼び出し方・一覧
 
-- 保存先: `reflections/271220-term-end.md`。元記録は `experiences/` と `projects/` にそのまま残ります。
+- 保存先: [`reflections/`](../../reflections/README.md)`271220-term-end.md`。元記録は [`experiences/`](../../experiences/README.md) と [`projects/`](../../projects/README.md) にそのまま残ります。
 - 呼び出し方: 「reflections/ の最新の振り返りを読んで、3学期の観察の結果と比べる案を見せてください」。
-- 一覧: `reflections/` フォルダ。年度の区切りは `annual-review/`。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+- 一覧: [`reflections/`](../../reflections/README.md) フォルダ。年度の区切りは [`annual-review/`](../../annual-review/README.md)。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
 
 ## この例のポイント
 
