@@ -3,7 +3,7 @@
 - 作成日: 2026-10-01
 - 更新日: 2026-10-02
 
-自分に近い場面を一つ選んでください。各ページの冒頭に送る一言と日記の見本があり、完成記録を開けば表・元メモ・追加回答を読めます。詳しい会話は折りたたんであります。
+「全員光ると思ってた」「作戦成功、かな？」「自分で作ったのに見づらい」。小さなひっかかりから始まる5つの話です。自分に近い場面を一つ選んでください。各ページの冒頭に送る一言と日記の見本があり、完成記録を開けば表・元メモ・追加回答を読めます。詳しい会話は折りたたんであります。
 
 **すぐ終わりたいときは [短い会話例](short-sessions.md)へ。** 質問なし、日記なし、訂正、保存できないときの伝え方があります。
 
@@ -11,11 +11,11 @@
 
 | 場面 | 会話で分かること | 完成記録 |
 | --- | --- | --- |
-| [①読んだ本を一言残す](01-first-quick-note.md) | 気になったことを問いにする | [一言メモ](records/experiences/2026/260511-deep-sea-book.md) |
-| [②文化祭の係を残す](02-school-festival-role.md) | 自分の役割とクラスの成果を分ける | [活動記録](records/experiences/2026/260919-school-festival.md) |
-| [③交差点で観察する](03-inquiry-bicycle.md) | 計画と観察結果、まだ言えないことを残す | [探究ノート](records/projects/bicycle-crossing/270602-inquiry-start.md) |
-| [④友人とアプリを作る](04-work-timetable-app.md) | 担当と工夫、反応を整理する | [作品カード](records/projects/timetable-app/280520-work-card.md) |
-| [⑤二つの記録を振り返る](05-reflection-two-records.md) | 当時の記録から今の考えを確かめる | [振り返り](records/reflections/271220-term-end.md) |
+| [①深海の魚って、全員光るんじゃないの？](01-first-quick-note.md) | 気になったことを問いにする | [一言メモ](records/experiences/2026/260511-deep-sea-book.md) |
+| [②受付係、ひそかに作戦変更](02-school-festival-role.md) | 自分の役割とクラスの成果を分ける | [活動記録](records/experiences/2026/260919-school-festival.md) |
+| [③「また危ない！」を、数えてみたら](03-inquiry-bicycle.md) | 計画と観察結果、まだ言えないことを残す | [探究ノート](records/projects/bicycle-crossing/270602-inquiry-start.md) |
+| [④自分で作ったのに、自分でも見づらい](04-work-timetable-app.md) | 担当と工夫、反応を整理する | [作品カード](records/projects/timetable-app/280520-work-card.md) |
+| [⑤去年の自分の「分からない」が、役に立った](05-reflection-two-records.md) | 当時の記録から今の考えを確かめる | [振り返り](records/reflections/271220-term-end.md) |
 
 ②→③→⑤は同じ生徒の設定です。⑤の完成記録から、根拠となる②・③へ戻れます。
 
