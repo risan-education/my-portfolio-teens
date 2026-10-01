@@ -3,7 +3,7 @@
 - 作成日: 2026-10-01
 - 更新日: 2026-10-01
 
-使う用紙: [活動記録](../../templates/experience.md)。人物・活動・発言・活動日はすべて架空です。本人の実績に含めません。[例3](03-inquiry-bicycle.md)・[例5](05-reflection-two-records.md)と同じ架空の生徒の設定です。
+使う用紙: [活動記録](../../templates/experience.md)。[例3](03-inquiry-bicycle.md)・[例5](05-reflection-two-records.md)と同じ架空の生徒の設定です。
 
 ## 場面
 

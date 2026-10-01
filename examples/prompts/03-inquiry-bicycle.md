@@ -3,7 +3,7 @@
 - 作成日: 2026-10-01
 - 更新日: 2026-10-01
 
-使う用紙: [探究ノート](../../templates/inquiry.md)。人物・活動・発言・活動日・数値はすべて架空です。本人の実績に含めません。[例2](02-school-festival-role.md)・[例5](05-reflection-two-records.md)と同じ架空の生徒の設定です。
+使う用紙: [探究ノート](../../templates/inquiry.md)。[例2](02-school-festival-role.md)・[例5](05-reflection-two-records.md)と同じ架空の生徒の設定です。
 
 ## 場面
 

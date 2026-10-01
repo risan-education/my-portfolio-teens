@@ -3,7 +3,7 @@
 - 作成日: 2026-10-01
 - 更新日: 2026-10-01
 
-使う用紙: [振り返り](../../templates/reflection.md)。人物・活動・発言・日付はすべて架空です。本人の実績に含めません。[例2](02-school-festival-role.md)・[例3](03-inquiry-bicycle.md)と同じ架空の生徒の設定です。
+使う用紙: [振り返り](../../templates/reflection.md)。[例2](02-school-festival-role.md)・[例3](03-inquiry-bicycle.md)と同じ架空の生徒の設定です。
 
 ## 場面
 
