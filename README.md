@@ -69,7 +69,7 @@
 
 > この内容で保存してください。
 
-保存できる環境ではChatGPTが自分用Privateへ保存し、保存先を報告します。標準はmainですが、別ブランチ・PRが必要な場合は先に方法を確認し、mainへの反映と区別します。GitHubでファイルを開き直して完了です。[日常の使い方](docs/recording-guide.md)／[依頼例](docs/ai-guide.md)
+保存できる環境ではChatGPTが自分用Privateへ保存し、保存先を報告します。標準はmainですが、別ブランチ・PRが必要な場合は先に方法を確認し、mainへの反映と区別します。GitHubでファイルを開き直して完了です。[日常の使い方](docs/recording-guide.md)／[依頼例](docs/ai-guide.md)／[記録の保存先・呼び出し方・一覧](docs/where-records-go.md)
 
 ## 今の目的から選ぶ
 
@@ -102,6 +102,8 @@
 | [templates/](templates/README.md) | ChatGPTが記録の作成に使う空欄の用紙 |
 | [examples/](examples/README.md) | すべて架空の記入例。本人の実績には含めない |
 
+フォルダがそのまま一覧です。記録の種類ごとの保存先・ファイル名・ChatGPTへの呼び出し方は[記録の保存先・呼び出し方・一覧](docs/where-records-go.md)にまとめています。問いの一覧は [questions.md](questions.md)、探究はテーマごとの `projects/<テーマ>/README.md` が入口です。
+
 ## 続けるためのガイド
 
 - [最初の10分](docs/first-10-minutes.md)／[ChatGPTの登録からGitHub接続まで](docs/getting-started.md)／[GitHubの登録](docs/github-basics.md)
@@ -109,7 +111,7 @@
 - [総合型選抜・推薦入試の準備と出力](docs/admissions-guide.md)／[自己理解と大学・学部選び](docs/self-understanding.md)／[面接・口頭試問の準備](docs/interview-guide.md)
 - [入試対策の中心となる6段階の探究ガイド](docs/inquiry-project-guide.md)
 - [大学版への移行準備](docs/migration-to-univ.md)／[共通仕様](docs/portfolio-format.md)／[移行検査](docs/migration-verification.md)
-- [探究レポートのまとめ方](docs/inquiry-report-guide.md)／[記録の索引](docs/record-index.md)
+- [記録の保存先・呼び出し方・一覧](docs/where-records-go.md)／[探究レポートのまとめ方](docs/inquiry-report-guide.md)／[記録の索引](docs/record-index.md)
 - [高校卒業後も続ける（大学・ガクチカ）](docs/after-high-school.md)／[AIへ持ち運ぶ](docs/portability.md)／[発表・進路・面接への活用](docs/future-use.md)
 - [日付のルール](docs/file-dates.md)／[保護者などの支援者へ](docs/supporter-guide.md)
 - [共有と個人情報](docs/privacy.md)／[利用停止・削除](docs/record-choices.md)

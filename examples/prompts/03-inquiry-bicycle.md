@@ -160,6 +160,12 @@ ChatGPT:
 | 2027-06-09 | 状態: これから → 途中 | 1回目の観察を実施 |
 ```
 
+## 保存先・呼び出し方・一覧
+
+- 保存先: `projects/bicycle-crossing/270602-inquiry-start.md`。テーマの入口は `projects/bicycle-crossing/README.md`（状態・更新日・各記録へのリンク）。
+- 呼び出し方: 「projects/bicycle-crossing/ の探究ノートを読み直して、今朝の観察を実施記録に追記する案を見せてください」。
+- 一覧: `projects/bicycle-crossing/README.md` と `questions.md`。「projects/ で状態が途中の探究を一覧にして」でも探せます。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+
 ## この例のポイント
 
 - 会話1の質問1で、二つ混ざっていた疑問を本人が一つに絞った。問いは本人が選び、ChatGPTは候補をAIの提案として残す。

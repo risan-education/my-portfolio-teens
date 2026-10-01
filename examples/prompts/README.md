@@ -30,6 +30,18 @@
 
 例2・3・5は同じ架空の生徒の記録という設定で、例5が例2・3のファイルを根拠として参照します。
 
+## 各例の記録はどこに保存され、どう呼び出すか
+
+| 例 | 保存先（本人用Private） | あとで呼び出す言い方 | 一覧の場所 |
+| --- | --- | --- | --- |
+| 1 一言メモ | `experiences/260511-deep-sea-book.md` | 「experiences/260511-deep-sea-book.md を読み直して…」 | `experiences/` フォルダ、問いは `questions.md` |
+| 2 活動記録 | `experiences/260919-school-festival.md` | 「experiences/ の2026年9月の記録を一覧にして」 | `experiences/` フォルダ |
+| 3 探究ノート | `projects/bicycle-crossing/270602-inquiry-start.md` | 「projects/bicycle-crossing/ の探究ノートを読み直して追記の案を」 | `projects/bicycle-crossing/README.md`（テーマの入口） |
+| 4 作品カード | `projects/timetable-app/280520-work-card.md` | 「projects/timetable-app/ の作品カードを開いて」 | `projects/timetable-app/README.md` |
+| 5 振り返り | `reflections/271220-term-end.md` | 「reflections/ の最新の振り返りを読んで」 | `reflections/` フォルダ |
+
+フォルダがそのまま一覧です。GitHubで開くと日付順に並びます。記録が増えたら[索引](../../templates/record-index.md)を作れます。詳しくは[記録の保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)。
+
 ## これから作る例（30件まで）
 
 | 番号 | 場面（予定） | 用紙 |

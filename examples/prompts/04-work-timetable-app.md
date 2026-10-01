@@ -107,6 +107,12 @@ ChatGPT:
 ## 追記・訂正
 ```
 
+## 保存先・呼び出し方・一覧
+
+- 保存先: `projects/timetable-app/280520-work-card.md`。入口は `projects/timetable-app/README.md`。
+- 呼び出し方: 「projects/timetable-app/ の作品カードを開いて、曜日切り替えを追加した変更を追記する案を見せてください」。
+- 一覧: `projects/` の各テーマの README。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+
 ## この例のポイント
 
 - 質問1で「なぜ作ったか」が本人の言葉で埋まった。入試や就活で最初に聞かれる部分だが、メモには書いていなかった。

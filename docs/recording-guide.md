@@ -66,6 +66,6 @@ ChatGPTの案で、事実・本人の考察・直接発言・支援者の観察�
 
 > 自分の実記録から、［テーマ］に関係するものを探してください。examples/、templates/、practice/、案内文と利用停止中の記録は除外してください。
 
-年ごとの experiences/、テーマごとの projects/、任意のタグ、[問いの一覧](../questions.md)からたどれます。疑問が続いたら[探究](inquiry-project-guide.md)、見返したくなったら[振り返りの依頼例](ai-guide.md)へ進みます。
+年ごとの experiences/、テーマごとの projects/、任意のタグ、[問いの一覧](../questions.md)からたどれます。記録の種類ごとの保存先・呼び出し方・一覧の場所は[こちら](where-records-go.md)。疑問が続いたら[探究](inquiry-project-guide.md)、見返したくなったら[振り返りの依頼例](ai-guide.md)へ進みます。
 
 記録が増えたら[索引](record-index.md)を任意で使えます。記録と索引の両方を更新してよい場合は、その範囲も保存依頼に含めます。
