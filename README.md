@@ -102,7 +102,7 @@
 | [templates/](templates/README.md) | ChatGPTが記録の作成に使う空欄の用紙 |
 | [examples/](examples/README.md) | すべて架空の記入例。本人の実績には含めない |
 
-フォルダがそのまま一覧です。記録の種類ごとの保存先・ファイル名・ChatGPTへの呼び出し方は[記録の保存先・呼び出し方・一覧](docs/where-records-go.md)にまとめています。問いの一覧は [questions.md](questions.md)、探究はテーマごとの [`projects/`](projects/README.md)`<テーマ>/README.md` が入口です。
+フォルダがそのまま一覧です。記録の種類ごとの保存先・ファイル名・ChatGPTへの呼び出し方は[記録の保存先・呼び出し方・一覧](docs/where-records-go.md)にまとめています。問いの一覧は [questions.md](questions.md)、探究はテーマごとの [`projects/`](projects/)`<テーマ>/README.md` が入口です。
 
 ## 続けるためのガイド
 

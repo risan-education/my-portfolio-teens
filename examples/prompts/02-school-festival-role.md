@@ -111,9 +111,9 @@ ChatGPT:
 
 ## 保存先・呼び出し方・一覧
 
-- 保存先: [`experiences/`](../../experiences/README.md)`260919-school-festival.md`。
+- 保存先: [`experiences/`](../../experiences/)`260919-school-festival.md`。
 - 呼び出し方: 「experiences/260919-school-festival.md を読んで、来年の受付の計画に使える部分を一覧にしてください」。
-- 一覧: [`experiences/`](../../experiences/README.md) フォルダ。例5の振り返りでは、このファイル名を指定して読ませます。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+- 一覧: [`experiences/`](../../experiences/) フォルダ。例5の振り返りでは、このファイル名を指定して読ませます。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
 
 ## この例のポイント
 

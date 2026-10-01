@@ -5,7 +5,7 @@
 
 ポートフォリオを始めるとき、「ChatGPTに何と話しかければよいか」「できあがりはどんな形か」が分からないと最初の一歩が出ません。このフォルダには、中学生・高校生が実際にChatGPTへ送る文（プロンプト例）と、その結果できあがる記録の例を、場面ごとに置いています。
 
-人物・活動・発言・活動日・数値はすべて架空です。本人の実績に含めず、集計・要約の対象にしません。 各例は題名の【架空例】で架空と示し、本文に同じ断り書きを重ねて書きません。プロンプトは自分の言葉に置き換えて使ってください。保存先は本人用Privateで、最初の練習は [`practice/`](../../practice/README.md) に置きます。
+人物・活動・発言・活動日・数値はすべて架空です。本人の実績に含めず、集計・要約の対象にしません。 各例は題名の【架空例】で架空と示し、本文に同じ断り書きを重ねて書きません。プロンプトは自分の言葉に置き換えて使ってください。保存先は本人用Privateで、最初の練習は [`practice/`](../../practice/) に置きます。
 
 ## 使い方
 
@@ -34,11 +34,11 @@
 
 | 例 | 保存先（本人用Private） | あとで呼び出す言い方 | 一覧の場所 |
 | --- | --- | --- | --- |
-| 1 一言メモ | [`experiences/`](../../experiences/README.md)`260511-deep-sea-book.md` | 「experiences/260511-deep-sea-book.md を読み直して…」 | [`experiences/`](../../experiences/README.md) フォルダ、問いは [`questions.md`](../../questions.md) |
-| 2 活動記録 | [`experiences/`](../../experiences/README.md)`260919-school-festival.md` | 「experiences/ の2026年9月の記録を一覧にして」 | [`experiences/`](../../experiences/README.md) フォルダ |
-| 3 探究ノート | [`projects/`](../../projects/README.md)`bicycle-crossing/270602-inquiry-start.md` | 「projects/bicycle-crossing/ の探究ノートを読み直して追記の案を」 | [`projects/`](../../projects/README.md)`bicycle-crossing/README.md`（テーマの入口） |
-| 4 作品カード | [`projects/`](../../projects/README.md)`timetable-app/280520-work-card.md` | 「projects/timetable-app/ の作品カードを開いて」 | [`projects/`](../../projects/README.md)`timetable-app/README.md` |
-| 5 振り返り | [`reflections/`](../../reflections/README.md)`271220-term-end.md` | 「reflections/ の最新の振り返りを読んで」 | [`reflections/`](../../reflections/README.md) フォルダ |
+| 1 一言メモ | [`experiences/`](../../experiences/)`260511-deep-sea-book.md` | 「experiences/260511-deep-sea-book.md を読み直して…」 | [`experiences/`](../../experiences/) フォルダ、問いは [`questions.md`](../../questions.md) |
+| 2 活動記録 | [`experiences/`](../../experiences/)`260919-school-festival.md` | 「experiences/ の2026年9月の記録を一覧にして」 | [`experiences/`](../../experiences/) フォルダ |
+| 3 探究ノート | [`projects/`](../../projects/)`bicycle-crossing/270602-inquiry-start.md` | 「projects/bicycle-crossing/ の探究ノートを読み直して追記の案を」 | [`projects/`](../../projects/)`bicycle-crossing/README.md`（テーマの入口） |
+| 4 作品カード | [`projects/`](../../projects/)`timetable-app/280520-work-card.md` | 「projects/timetable-app/ の作品カードを開いて」 | [`projects/`](../../projects/)`timetable-app/README.md` |
+| 5 振り返り | [`reflections/`](../../reflections/)`271220-term-end.md` | 「reflections/ の最新の振り返りを読んで」 | [`reflections/`](../../reflections/) フォルダ |
 
 フォルダがそのまま一覧です。GitHubで開くと日付順に並びます。記録が増えたら[索引](../../templates/record-index.md)を作れます。詳しくは[記録の保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)。
 

@@ -109,9 +109,9 @@ ChatGPT:
 
 ## 保存先・呼び出し方・一覧
 
-- 保存先: [`projects/`](../../projects/README.md)`timetable-app/280520-work-card.md`。入口は [`projects/`](../../projects/README.md)`timetable-app/README.md`。
+- 保存先: [`projects/`](../../projects/)`timetable-app/280520-work-card.md`。入口は [`projects/`](../../projects/)`timetable-app/README.md`。
 - 呼び出し方: 「projects/timetable-app/ の作品カードを開いて、曜日切り替えを追加した変更を追記する案を見せてください」。
-- 一覧: [`projects/`](../../projects/README.md) の各テーマの README。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
+- 一覧: [`projects/`](../../projects/) の各テーマの README。[保存先・呼び出し方・一覧の場所](../../docs/where-records-go.md)
 
 ## この例のポイント
 
