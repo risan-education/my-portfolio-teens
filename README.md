@@ -38,11 +38,11 @@
 
 ## ChatGPTで始める
 
-1. [最初の10分](docs/first-10-minutes.md)で一件作る。
-2. 続けたくなったら、[はじめ方](docs/getting-started.md)に沿って自分用Privateを用意する。
-3. [接続確認](docs/connection-check.md)で、架空の練習記録を保存・追記し、もう一度開けることを確かめる。
+1. 新しく始める家庭は、[はじめ方](docs/getting-started.md)の6ステップ（保護者用Google→ChatGPT Plus以上→スマホアプリ→保護者用GitHub→Privateコピー→接続）を進める。
+2. [接続確認](docs/connection-check.md)で、架空の練習記録を保存・追記し、もう一度開けることを確かめる。
+3. 本人が残したいメモを伝え、案の確認と保存を続ける。
 
-使える機能は環境によって異なります。[確認済み・未確認の範囲](docs/connection-environments.md)を参照し、保存機能がなければ[手動保存](docs/manual-editing.md)で続けます。有料プランやアプリの導入は必須ではありません。小学生版から続ける人は[引き継ぎガイド](docs/migration.md)へ。
+小学生版から続ける人は[引き継ぎガイド](docs/migration.md)へ。契約前に文章づくりを試したい人は、無料プランでも使える[最初の10分](docs/first-10-minutes.md)へ進めます。接続・保存の機能は環境によって異なるため、[確認済み・未確認の範囲](docs/connection-environments.md)を参照し、保存機能がなければ[手動保存](docs/manual-editing.md)で続けます。
 
 ## 高1で募集要項を読んだら、6段階の探究を始める
 
